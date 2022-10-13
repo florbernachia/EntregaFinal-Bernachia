@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: Raleway, sans-serif;
+}
+.padre{
+    display: grid;
+    grid-template-areas:
+        "menu"
+        "coleccion"
+        "promociones"
+        "final";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 4fr 2r;
+    grid-row-gap: 1%;
+
+}
+header{
+    position: sticky;
+    grid-area: menu;
+    justify-self: center;
+    align-self: start;
+    width: 100%;
+}
+header div{
+    display: flex;
+    width: 100%;
+    position: sticky;
+}
+header div a{
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 12%;
+    width: 97%;
+}
+header div i{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 3%;
+    font-size: x-large;
+    margin-top: 5%;
+    margin-right: 3%;
+    color: lightgrey;
+}
+header nav{
+    width: 100%;
+    background-color: lightgrey;
+    position: sticky;
+}
+header nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: x-large;
+    position: relative;
+}
+
+header nav ul li .productos{
+    position: absolute;
+    display: none;
+    background-color: rgb(236, 211, 211);
+    width: 6%;
+    margin-left: 1%;
+}
+header nav ul li .productos li{
+    display: block;
+    margin-top: 3%;
+    text-align: center;
+}
+
+header nav ul li:hover .productos{
+    display: block;
+}
+
+h1{
+    font-size: 300%;
+    text-align: center;
+    color: rgb(155, 20, 76);
+}
+.principal{
+    grid-area: coleccion;
+    justify-content: center;
+}
+.nuevacoleccion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.segundasection{
+    grid-area: promociones;
+    width: 100%;
+}
+h2{
+    background-color: rgba(255, 161, 161, 0.283);
+    color: rgb(155, 20, 76);
+    font-family: ralewey;
+    font-size: xx-large;
+    text-align: center;
+    width: 90%;
+    padding: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+.promos{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: rgb(74, 237, 104); 
+    padding: 20px;
+    grid-area: final;
+    justify-content: end;
+    text-align: end;
+    color: white;
+    font-style: bold;
+    font-family: ralewey;
+    font-size: large;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 25%;
+    height: 25%;
+    text-align: center;
+}
+.card img{
+    margin-top: 5%;
+    border-radius: 15%;
+}
+
+.cardPromo{
+    border-color: rgba(161, 34, 55);
+    border-style: solid;
+    width: 20%;
+    margin-top: 3%;
+}
+.cardPromo__img{
+    margin-top: 3%;
+    margin-left: 10%;
+}
+.cardPromo__text{
+    text-align: center;
+    font-style: bold;
+}
+.cardPromo__boton{
+    text-decoration: none;
+    margin-left: 25%;
+}
