@@ -21,36 +21,41 @@ body{
 }
 header{
     grid-area: menu;
-    justify-self: center;
-    align-self: start;
     width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
     position: sticky;
+    top: 0%;
 }
-header div{
+.menu{
     display: flex;
-    width: 100%;
-}
-header div a{
-    display: flex;
-    justify-content: center;
+    margin-left: 30%;
     margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 50%;
-    margin-right: 35%;
-    width: 10%;
+    background-color: white;
 }
-header div i{
+.logo{
+    width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-right: 8%;
+}
+.iconos{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
     align-content: center;
-    width: 3%;
-    font-size: x-large;
     margin-top: 5%;
-    margin-right: 3%;
+    background-color: white;
+}
+.iconos a{
+    font-size: x-large;
     color: rgb(74, 237, 104);
+    text-decoration: none;
 }
 header nav{
+    display: flex;
     width: 100%;
+    background-color: white;
 }
 header nav ul{
     display: flex;
@@ -59,8 +64,10 @@ header nav ul{
     align-items: center;
     list-style-type: none;
     padding: 2%;
+    background-color: white;
 }
 header nav ul li a{
+
     text-decoration: none;
     font-size: x-large;
     position: relative;
@@ -70,14 +77,17 @@ header nav ul li a{
 header nav ul li .productos{
     position: absolute;
     display: none;
-    background-color: rgb(236, 211, 211);
-    width: 6%;
-    margin-left: 1%;
+    border-radius: 5%;
+    background-color: rgb(74, 237, 104);
+    width: 10%;
+    height: 70%;
+    color: white;
+    line-height: 2rem;
 }
 header nav ul li .productos li{
     display: block;
-    margin-top: 3%;
-    text-align: center;
+    text-align: left;
+    font-size: large;
 }
 
 header nav ul li:hover .productos{
@@ -91,7 +101,6 @@ h1{
     border-bottom: 100%;
     border-left: 0;
     border-right: 0;
-    opacity: 70%;
     color: rgb(236, 72, 99);
     font-family: ralewey;
     font-size: xx-large;
@@ -114,7 +123,6 @@ h1{
     width: 100%;
 }
 h2{
-    opacity: 70%;
     color: rgb(236, 72, 99);
     font-family: ralewey;
     font-size: xx-large;
@@ -138,14 +146,34 @@ footer{
     background-color: rgb(74, 237, 104); 
     padding: 20px;
     grid-area: final;
-    justify-content: end;
-    text-align: end;
+    display: flex;
     color: white;
     font-style: bold;
     font-family: ralewey;
     font-size: large;
 }
-
+.contacto{
+    width: 40%;
+    justify-content: right;
+}
+.contacto ul{
+    list-style-type: none;
+}
+.pagos{
+    width: 30%;
+    text-align: center;
+}
+.pagos i{
+    font-size: 2rem;
+}
+.social{
+    width: 30%;
+    text-align: right;
+}
+.social a i{
+    color: white;
+    font-size: 1.5rem;
+}
 .productos{
     display: flex;
     flex-wrap: wrap;
