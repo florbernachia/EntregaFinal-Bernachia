@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     font-family: Raleway, sans-serif;
 }
 .padre{
@@ -20,24 +20,24 @@ body{
 
 }
 header{
-    position: sticky;
     grid-area: menu;
     justify-self: center;
     align-self: start;
     width: 100%;
+    position: sticky;
 }
 header div{
     display: flex;
     width: 100%;
-    position: sticky;
 }
 header div a{
     display: flex;
     justify-content: center;
     margin-top: 1%;
     margin-bottom: 1%;
-    margin-left: 12%;
-    width: 97%;
+    margin-left: 50%;
+    margin-right: 35%;
+    width: 10%;
 }
 header div i{
     display: flex;
@@ -47,24 +47,24 @@ header div i{
     font-size: x-large;
     margin-top: 5%;
     margin-right: 3%;
-    color: lightgrey;
+    color: rgb(74, 237, 104);
 }
 header nav{
     width: 100%;
-    background-color: lightgrey;
-    position: sticky;
 }
 header nav ul{
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     list-style-type: none;
+    padding: 2%;
 }
 header nav ul li a{
     text-decoration: none;
     font-size: x-large;
     position: relative;
+    color: rgb(74, 237, 104);
 }
 
 header nav ul li .productos{
@@ -85,9 +85,20 @@ header nav ul li:hover .productos{
 }
 
 h1{
-    font-size: 300%;
+    border-color: rgb(18, 161, 45);
+    border-style:dashed;
+    border-top: 100%;
+    border-bottom: 100%;
+    border-left: 0;
+    border-right: 0;
+    opacity: 70%;
+    color: rgb(236, 72, 99);
+    font-family: ralewey;
+    font-size: xx-large;
     text-align: center;
-    color: rgb(155, 20, 76);
+    font-style: bold;
+    padding: 2%;
+    margin-bottom: 1%;
 }
 .principal{
     grid-area: coleccion;
@@ -103,16 +114,20 @@ h1{
     width: 100%;
 }
 h2{
-    background-color: rgba(255, 161, 161, 0.283);
-    color: rgb(155, 20, 76);
+    opacity: 70%;
+    color: rgb(236, 72, 99);
     font-family: ralewey;
     font-size: xx-large;
     text-align: center;
-    width: 90%;
-    padding: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
+    font-style: bold;
+    padding: 2%;
     margin-top: 3%;
+    border-top: 100%;
+    border-bottom: 100%;
+    border-left: 0;
+    border-right: 0;
+    border-style: dashed;
+    border-color: rgb(18, 161, 45);
 }
 .promos{
     display: flex;
