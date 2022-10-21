@@ -11,95 +11,121 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,200&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/imagenes/logo f&f.jpg">
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b40d2ff822.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="padre">
-    <header>
-        <div class="menu">
-            <div class="logo">
-                <a href="./index.html"><img src="./assets/imagenes/20.jpg" alt="" width="70px" height="100px"></a>
-            </div>
-                <div class="iconos">
-            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/about_us.html">Sobre Nosotras</a></li>
-                <li hover><a href="./pages/productos.html">Productos</a>
-                    <ul class="productos">
-                        <li>Tops</li>
-                        <li>Canillitas</li>
-                        <li>Calzas</li>
-                    </ul>
-                </li>
-                <li><a href="./pages/talles.html">Talles</a></li>
-                <li><a href="./pages/Contactanos.html">Contáctanos</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="principal">
-            <h1>NUEVA COLECCIÓN</h1>
-            <div class="nuevacoleccion">
-            <div>
-                <img src="https://d22fxaf9t8d39k.cloudfront.net/20c9af6f692afe4e204863ab9fd3533dbcb3042ec573d0b7401f4a778f7fb74937440.jpeg" alt="Canillita flores" width="400px" height="400px">
-            </div>
-            <div>
-                <img src="https://d22fxaf9t8d39k.cloudfront.net/8deeede456380565d52154feda27e281587962f51c6e58de14dc330e19f7711937440.png" alt="Canillita azul" width="400px" height="400px"> 
-            </div>
-            <div>
-                <img src="https://d22fxaf9t8d39k.cloudfront.net/44e7d0501599f9838237ccfb8b47da7fd382839f9c3e01dd23bf3bd7bdeae6c237440.jpeg" alt="Canillita mundial" width="400px" height="400px">
-            </div>
-            </div>
-        </section>
-        <section class="segundasection">
-            <h2>PROMOCIONES</h2>
-            <div class="promos">
-                <div class="cardPromo">
-                    <img src="https://d22fxaf9t8d39k.cloudfront.net/277d02b39ab67afe52d0d89513684607b6ab66c710160450be5347c599404ef437440.jpeg" alt="Top1" width="200px" height="200px" class="cardPromo__img">
-                    <p class="cardPromo__text">Top París</p>
-                    <button class="cardPromo__boton">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button> 
+        <header>
+            <nav class="navbar navbar-expand-lg bg-white">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./pages/about_us.html">Sobre
+                                    Nosotras</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                    href="./pages/productos.html" hover>
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Tops</a></li>
+                                    <li><a class="dropdown-item" href="#">Canillitas</a></li>
+                                    <li><a class="dropdown-item" href="#">Calzas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="navbar-nav" href="./index.html"><img src="./assets/imagenes/20.jpg" alt="" width="20%" height="20%"></a>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./pages/talles.html" aria-current="page">Talles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./pages/Contactanos.html"
+                                    aria-current="page">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="cardPromo">
-                    <img src="https://d22fxaf9t8d39k.cloudfront.net/dcf9ae79f2b3ed835e47e8aa05c4f984951b5c5da6ae1f742326e30c30e034ac37440.jpeg" alt="Top2" width="200px" height="200px" class="cardPromo__img"> 
-                    <p class="cardPromo__text">Top Londres</p>
-                    <button class="cardPromo__boton">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button> 
+            </nav>
+        </header>
+        <main>
+            <section class="principal">
+                <h1>NUEVA COLECCIÓN</h1>
+                <div class="nuevacoleccion">
+                    <div>
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/20c9af6f692afe4e204863ab9fd3533dbcb3042ec573d0b7401f4a778f7fb74937440.jpeg"
+                            alt="Canillita flores" width="400px" height="400px">
+                    </div>
+                    <div>
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/8deeede456380565d52154feda27e281587962f51c6e58de14dc330e19f7711937440.png"
+                            alt="Canillita azul" width="400px" height="400px">
+                    </div>
+                    <div>
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/44e7d0501599f9838237ccfb8b47da7fd382839f9c3e01dd23bf3bd7bdeae6c237440.jpeg"
+                            alt="Canillita mundial" width="400px" height="400px">
+                    </div>
                 </div>
-                <div class="cardPromo">
-                    <img src="https://d22fxaf9t8d39k.cloudfront.net/8bc68e351f1dbd6577d7a25f65d139d19de92a9ff53603e0506980e8d44afda137440.jpeg" alt="Top3" width="200px" height="200px" class="cardPromo__img">
-                    <p class="cardPromo__text">Top Berlín</p>
-                    <button class="cardPromo__boton">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button> 
+            </section>
+            <section class="segundasection">
+                <h2>PROMOCIONES</h2>
+                <div class="promos">
+                    <div class="cardPromo">
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/277d02b39ab67afe52d0d89513684607b6ab66c710160450be5347c599404ef437440.jpeg"
+                            alt="Top1" width="200px" height="200px" class="cardPromo__img">
+                        <p class="cardPromo__text">Top París</p>
+                        <button class="cardPromo__boton">Agregar al carrito <i
+                                class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                    <div class="cardPromo">
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/dcf9ae79f2b3ed835e47e8aa05c4f984951b5c5da6ae1f742326e30c30e034ac37440.jpeg"
+                            alt="Top2" width="200px" height="200px" class="cardPromo__img">
+                        <p class="cardPromo__text">Top Londres</p>
+                        <button class="cardPromo__boton">Agregar al carrito <i
+                                class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                    <div class="cardPromo">
+                        <img src="https://d22fxaf9t8d39k.cloudfront.net/8bc68e351f1dbd6577d7a25f65d139d19de92a9ff53603e0506980e8d44afda137440.jpeg"
+                            alt="Top3" width="200px" height="200px" class="cardPromo__img">
+                        <p class="cardPromo__text">Top Berlín</p>
+                        <button class="cardPromo__boton">Agregar al carrito <i
+                                class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
                 </div>
+            </section>
+        </main>
+        <footer>
+            <div class="contacto">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>contacto@floryflor.com</li>
+                    <li>0800-444-FLOR</li>
+                    <li>Av. Juan B. Justo 345, CABA</li>
+                </ul>
             </div>
-        </section>
-    </main>
-    <footer>
-        <div class="contacto">
-            <h4>Contacto</h4>
-            <ul>
-                <li>contacto@floryflor.com</li>
-                <li>0800-444-FLOR</li>
-                <li>Av. Juan B. Justo 345, CABA</li>
-            </ul>
-        </div>
-        <div class="pagos">
-            <h4>Medios de Pago</h4>
-            <i class="fa-brands fa-cc-visa"></i>
-            <i class="fa-brands fa-cc-mastercard"></i>
-            <i class="fa-brands fa-cc-paypal"></i>
-        </div>
-        <div class="social">
-            <h4>Nuestras redes sociales</h4>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        </div>
+            <div class="pagos">
+                <h4>Medios de Pago</h4>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+            </div>
+            <div class="social">
+                <h4>Nuestras redes sociales</h4>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
 
-    </footer>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
     </div>
 </body>
 
