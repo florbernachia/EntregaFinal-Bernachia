@@ -11,137 +11,197 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,200&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/imagenes/logo f&f.jpg">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b40d2ff822.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <div class="padre">
         <header>
             <div class="menu">
-                <div class="logo">
-                    <a href="../index.html"><img src="../assets/imagenes/20.jpg" alt="" width="70px" height="100px"></a>
-                </div>
+                <nav>
+                    <ul>
+                        <li><a href="./about_us.html">Sobre Nosotras</a></li>
+                        <li hover><a href="./productos.html">Productos</a>
+                            <ul class="productos">
+                                <li>Tops</li>
+                                <li>Canillitas</li>
+                                <li>Calzas</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="logo">
+                        <a href="../index.html"><img src="../assets/imagenes/20.jpg" alt="" width="70px"
+                                height="100px"></a>
+                    </div>
+                    <ul>
+                        <li><a href="./talles.html">Talles</a></li>
+                        <li><a href="./Contactanos.html">Contáctanos</a></li>
+                    </ul>
                     <div class="iconos">
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
+                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </nav>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./about_us.html">Sobre Nosotras</a></li>
-                    <li hover><a href="./productos.html">Productos</a>
-                        <ul class="productos">
-                            <li>Tops</li>
-                            <li>Canillitas</li>
-                            <li>Calzas</li>
-                        </ul>
-                    </li>
-                    <li><a href="./talles.html">Talles</a></li>
-                    <li><a href="./Contactanos.html">Contáctanos</a></li>
-                </ul>
-            </nav>
         </header>
-    <main>
-        <section class="">
+        <main>
             <h1>Productos</h1>
-            <div class="card">
-                <img src="../assets/imagenes/prueba remera 1.jpg" alt="muestra" width="300px" height="250px" class="card__img" hover>
-                <p class="card__text">Remera basica 1</p> 
-                <div>
-                    <a href="#" class="card__button" hover>Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
-                    
+            <section class="galeria_productos">
+                <div class="card" style="width: 15rem; height: 23rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/top1.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Top MEXICO</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="../assets/imagenes/prueba remera 1.jpg" alt="muestra" width="300px" height="250px" class="card__img">
-                <p class="card__text">Remera basica 1</p> 
-                <div>
-                    <a href="#" class="card__button">Agregar al carrito</a>
+                <div class="card" style="width: 15rem; height: 23rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/top2.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Top FRANCIA</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="../assets/imagenes/prueba remera 1.jpg" alt="muestra" width="300px" height="250px" class="card__img">
-                <p class="card__text">Remera basica 1</p> 
-                <div>
-                    <a href="#" class="card__button">Agregar al carrito</a>
+                <div class="card" style="width: 15rem; height: 23rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/top3.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Top JAPON</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="../assets/imagenes/prueba remera 1.jpg" alt="muestra" width="300px" height="250px" class="card__img">
-                <p class="card__text">Remera basica 1</p> 
-                <div>
-                    <a href="#" class="card__button">Agregar al carrito</a>
+                <div class="card" style="width: 15rem; height: 23rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/top4.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Top CONGO</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="../assets/imagenes/prueba remera 1.jpg" alt="muestra" width="300px" height="250px" class="card__img">
-                <p class="card__text">Remera basica 1</p> 
-                <div>
-                    <a href="#" class="card__button">Agregar al carrito</a>
+                <div class="card" style="width: 15rem; height: 23rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/top5.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Top AUSTRALIA</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="../assets/imagenes/prueba remera 1.jpg" alt="muestra" width="300px" height="250px" class="card__img">
-                <p class="card__text">Remera basica 1</p> 
-                <div>
-                    <a href="#" class="card__button">Agregar al carrito</a>
+                <div class="card" style="width: 15rem; height: 23rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/top6.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Top PERU</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="../assets/imagenes/prueba remera 1.jpg" alt="muestra" width="300px" height="250px" class="card__img">
-                <p class="card__text">Remera basica 1</p> 
-                <div>
-                    <a href="#" class="card__button">Agregar al carrito</a>
+                <div class="card" style="width: 15rem; height: 23rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita1.png.jpeg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Canillita CANADA</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="../assets/imagenes/prueba remera 1.jpg" alt="muestra" width="300px" height="250px" class="card__img">
-                <p class="card__text">Remera basica 1</p> 
-                <div>
-                    <a href="#" class="card__button">Agregar al carrito</a>
+                <div class="card" style="width: 15rem; height: 23rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita2.png.jpeg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Canillita ESPAÑA</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="../assets/imagenes/prueba remera 1.jpg" alt="muestra" width="300px" height="250px" class="card__img">
-                <p class="card__text">Remera basica 1</p> 
-                <div>
-                    <a href="#" class="card__button">Agregar al carrito</a>
+                <div class="card" style="width: 15rem; height: 23rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita3.png.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Canillita FILIPINAS</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="../assets/imagenes/prueba remera 1.jpg" alt="muestra" width="300px" height="250px" class="card__img">
-                <p class="card__text">Remera basica 1</p> 
-                <div>
-                    <a href="#" class="card__button">Agregar al carrito</a>
+                <div class="card" style="width: 15rem; height: 23rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita4.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Canillita TONGA</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
                 </div>
+                <div class="card" style="width: 15rem; height: 23rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita5.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Canillita MARRUECOS</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem; height: 23rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita6.png.jpeg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Canillita BRASIL</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem; height: 30rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/calza1.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Calza GUATEMALA</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem; height: 30rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/calza2.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Calza ITALIA</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem; height: 30rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/calza3.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Calza CHINA</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+                <div class="card" style="width: 15rem; height: 30rem;">
+                    <a href="" hover class="fotoprod"><img src="../assets/imagenes/calza4.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href=""><h5 class="card-title">Calza ARGENTINA</h5>
+                        <p class="card-text">$3500</p>
+                        Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="contacto">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>contacto@floryflor.com</li>
+                    <li>0800-444-FLOR</li>
+                    <li>Av. Juan B. Justo 345, CABA</li>
+                </ul>
             </div>
-            
-        </section>
-    </main>
-    <footer>
-        <div class="contacto">
-            <h4>Contacto</h4>
-            <ul>
-                <li>contacto@floryflor.com</li>
-                <li>0800-444-FLOR</li>
-                <li>Av. Juan B. Justo 345, CABA</li>
-            </ul>
-        </div>
-        <div class="pagos">
-            <h4>Medios de Pago</h4>
-            <i class="fa-brands fa-cc-visa"></i>
-            <i class="fa-brands fa-cc-mastercard"></i>
-            <i class="fa-brands fa-cc-paypal"></i>
-        </div>
-        <div class="social">
-            <h4>Nuestras redes sociales</h4>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        </div>
+            <div class="pagos">
+                <h4>Medios de Pago</h4>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+            </div>
+            <div class="social">
+                <h4>Nuestras redes sociales</h4>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
 
-    </footer>
+        </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 
 </html>
