@@ -10,77 +10,86 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,200&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/imagenes/logo f&f.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/b40d2ff822.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="menu">
-            <div class="logo">
-                <a href="../index.html"><img src="../assets/imagenes/20.jpg" alt="" width="70px" height="100px"></a>
-            </div>
-                <div class="iconos">
-            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./about_us.html">Sobre Nosotras</a></li>
-                <li hover><a href="./productos.html">Productos</a>
-                    <ul class="productos">
-                        <li>Tops</li>
-                        <li>Canillitas</li>
-                        <li>Calzas</li>
+        <header>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="./about_us.html">Sobre Nosotras</a></li>
+                        <li hover><a href="./productos.html">Productos</a>
+                            <ul class="submenu">
+                                <li>Tops</li>
+                                <li>Canillitas</li>
+                                <li>Calzas</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../index.html"><img src="../assets/imagenes/20.jpg" alt="" width="100%" height="100%" class="logo"></a>
+                        </li>
+                        <li><a href="./talles.html">Talles</a></li>
+                        <li><a href="./Contactanos.html">Contáctanos</a></li>
                     </ul>
-                </li>
-                <li><a href="./talles.html">Talles</a></li>
-                <li><a href="./Contactanos.html">Contáctanos</a></li>
-            </ul>
-        </nav>
-    </header>
+                    <div class="iconos">
+                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
     <main>
         <h1>Contáctanos</h1>
-        <section>
+        <section class="contactanos">
             <form action="">
                 <fieldset>
-                    <legend>Contáctanos</legend>
                     <div>
-                        <label for="">Sexo</label>
+                        <label for="name">Nombre</label>
                     </div>
                     <div>
-                        <input type="radio" name="sexo" id="hombre">
-                        <label for="hombre">Hombre</label>
-                        <input type="radio" name="sexo" id="mujer">
-                        <label for="mujer">Mujer</label>
+                        <input type="text" name="name" required>
                     </div>
                     <div>
-                        <label for="">Nombre</label>
-                        <input type="text">
+                        <label for="last-name">Apellido</label>
                     </div>
                     <div>
-                        <label for="">Apellido</label>
-                        <input type="text">
+                        <input type="text" name="last-name">
                     </div>
                     <div>
                         <label for="">E-mail</label>
-                        <input type="email" name="" id="">
+                    </div>
+                    <div>
+                        <input type="email" name="" id="" placeholder="email@email.com" required>
                     </div>
                     <div>
                         <label for="">Mensaje</label>
                     </div>
                     <div>
-                        <textarea name="Mensaje" id="" cols="30" rows="10">Hola F&F! Quisiera consultarles por...</textarea>
+                        <textarea name="Mensaje" id="" cols="30" rows="10" required>Hola F&F! Quisiera consultarles por...</textarea>
                     </div>
                     <div>
-                        <input type="submit">
+                        <input type="submit" class="enviar">
                     </div>
                     <div>
                         <p>Gracias por contactarnos!</p>
                     </div>
                 </fieldset>
             </form>
+            <div>
+                <div>
+                    <i class="fa-solid fa-phone"></i> 0800 - 444 - FLOR
+                </div>
+                <div>
+                    <i class="fa-solid fa-at"></i> contacto@floryflor.com
+                </div>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i> Av. Juan B. Justo 345, CABA
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.973974843397!2d-58.42959758531404!3d-34.57952506372448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59a959db033%3A0xb9fb5c288c66319a!2sAv.%20Juan%20B.%20Justo%2034%2C%20C1425%20CABA%2C%20Argentina!5e0!3m2!1sen!2sfr!4v1666460947436!5m2!1sen!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main> 
     <footer>
@@ -105,5 +114,6 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
