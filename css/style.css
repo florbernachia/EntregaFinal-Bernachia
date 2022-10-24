@@ -26,7 +26,6 @@ header{
     background-color: rgb(255, 255, 255);
     color: #FF0060;
     margin-top: 1%;
-    
 }
 header nav{
     display: flex;
@@ -56,11 +55,12 @@ header nav ul li .submenu{
     position: absolute;
     display: none;
     border-radius: 5%;
-    background-color: #FFE90B;
+    background-color: rgba(128, 128, 128, 0.605);
     width: 8%;
     height: 60%;
-    color: #FF0060;
+    color: white;
     list-style-type: none;
+    text-align: left;
 }
 header nav ul li .submenu li{
     display: block;
@@ -79,19 +79,15 @@ header nav .iconos{
 }
 .iconos a{
     font-size: x-large;
-    color: #FFE90B;
+    color: gray;
     text-decoration: none;
 }
-main{
-
-}
 h1{
-    background-image: url(../assets/imagenes/fondo.jpg);
     border-top: 100%;
     border-bottom: 100%;
     border-left: 0;
     border-right: 0;
-    color: white;
+    color: #FF0060;
     font-family: Josefin sans, sans-serif;
     font-size: xx-large;
     text-align: center;
@@ -113,32 +109,30 @@ h1{
     width: 100%;
 }
 h2{
-    color: rgb(236, 72, 99);
+    color: #FF0060;
     font-family: Josefin Sans;
     font-size: xx-large;
     text-align: center;
     font-style: bold;
     padding: 2%;
-    margin-top: 3%;
-    border-top: 100%;
-    border-bottom: 100%;
-    border-left: 0;
-    border-right: 0;
-    border-style: dashed;
-    border-color: rgb(18, 161, 45);
 }
 .promos{
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
-
+.promos a{
+    text-decoration: none;
+    color: gray;
+    text-align: center;
+}
 footer{
-    background-color: #B23565; 
+    background-color: #FF0060; 
     grid-area: final;
     padding: 1%;
     height: 80%;
     display: flex;
-    color: #FFE90B;
+    color: white;
     font-style: bold;
     font-family: Josefin Sans;
     font-size: 0.8rem;
@@ -162,7 +156,7 @@ footer{
     text-align: right;
 }
 .social a i{
-    color: #FFE90B;
+    color: white;
     font-size: 1.5rem;
 }
 .galeria_productos{
@@ -174,16 +168,16 @@ footer{
 }
 
 .card{
-    border-color: dark;
+    border-color: #FF0060;
     border-style: double;
-    background-color: #FF0060;
+    background-color: white;
 }
 .fotoprod:hover .card-img-top{
     transform: scale(1.2,1.2);
 }
 .galeria_productos a{
     text-decoration: none;
-    color: #6DBACC;
+    color: gray;
     font-size: large;
 }
 .carousel-item{
@@ -195,49 +189,53 @@ footer{
     justify-content: space-evenly;
     text-align: center;
     font-style: bold;
+    color: gray;
 }
 form input{
-    border-color: rgb(236, 72, 99);
+    border-color: #FF0060;
     border-style: double;
     width: 100%;
 }
 form textarea{
-    border-color: rgb(236, 72, 99);
+    border-color: #FF0060;
     border-style: double;
 }
 .enviar{
     background-color: white;
-    border-color: rgb(236, 72, 99);
+    border-color: #FF0060;
     border-style: double;
-    color: rgb(74, 237, 104);
+    color: gray;
     width: 60%;
 }
 .contactanos i{
-    color: rgb(236, 72, 99);
+    color: #FF0060;
 }
 .como_medir{
-    color: rgb(236, 72, 99);
+    color:#FF0060;
     margin: 3%;
+    text-align: center;
+    font-size: 1.3rem;
+    width: 70%;
+    margin-left: 15%;
+}
+.como_medir h2{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: grey;
+    text-align: center;
+    font-style: bold;
 }
 .talles{
     display: flex;
-    color: rgb(236, 72, 99);
+    color: grey;
     font-family: Josefin Sans;
     font-size: 1rem;
     padding-top: 1%;
+    gap: 1%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
 
-}
-.talles ol{
-    width: 100%;
-}
-.talles ol li{
-    margin-left: 1%;
-    margin-right: 1%;
-    list-style-type: none;
-}
-.talles img{
-    width: 33%;
-}
 .medidas{
     display: flex;
     justify-content: space-evenly;
@@ -247,8 +245,11 @@ form textarea{
     align-items: center;
     margin: 3%;
 }
+.nosotras img{
+    border-radius: 5%;
+}
 .nosotras p{
     width: 100%;
     margin-left: 3%;
-
+    color: gray;
 }
