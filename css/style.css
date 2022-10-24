@@ -22,7 +22,7 @@ body{
 header{
     grid-area: menu;
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color: rgb(255, 255, 255);
     color: #FF0060;
     margin-top: 1%;
