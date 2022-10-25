@@ -27,6 +27,7 @@ header{
     color: #FF0060;
     margin-top: 1%;
 }
+/*
 header nav{
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +88,7 @@ header nav .iconos{
     color: gray;
     text-decoration: none;
 }
+*/
 h1{
     color: #FF0060;
     font-family: Josefin sans, sans-serif;
