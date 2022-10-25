@@ -118,6 +118,7 @@ h2{
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
+    gap: 10;
 }
 .promos a{
     text-decoration: none;
@@ -128,13 +129,13 @@ footer{
     background-color: #FF0060; 
     grid-area: final;
     padding: 1%;
-    height: 80%;
+    height: 100%;
     display: flex;
     color: white;
     font-style: bold;
     font-family: Josefin Sans;
     font-size: 0.8rem;
-    margin-top: 1%;
+
 }
 .contacto{
     width: 40%;
@@ -218,7 +219,6 @@ form textarea{
     font-size: 1.2rem;
     width: 100%;
     height: 10%;
-
 }
 .como_medir h2{
     padding-top: 3%;
@@ -246,6 +246,10 @@ form textarea{
     align-items: center;
     margin: 3%;
 }
+.nosotras div{
+    width: 100%;
+
+}
 .nosotras img{
     border-radius: 5%;
 }
@@ -253,4 +257,63 @@ form textarea{
     width: 100%;
     margin-left: 3%;
     color: gray;
+}
+
+@media screen and (max-width: 720px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .contacto{
+        width: 100%;
+    }
+    .contacto ul{
+        margin: 0%;
+    }
+    .pagos{
+        width: 100%;
+    }
+    .social{
+        width: 100%;
+        text-align: center;
+    }
+    .talles{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        padding-top: 1%;
+        gap: 1%;
+        margin-left: 5%;
+        margin-bottom: 2%;
+    }
+    .contactanos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    form input{
+        width: 50%;
+    }
+    .carrito{
+        display: none;
+    }
+    .nosotras{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3%;
+    }
+    .promos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .promos .card{
+        margin-top: 3%;
+    }
+    .navbar .nav-link{
+        justify-content: start;
+    }
 }
