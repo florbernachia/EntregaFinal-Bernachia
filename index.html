@@ -12,13 +12,39 @@
     <script src="https://kit.fontawesome.com/b40d2ff822.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="padre">
         <header>
+            <nav class="navbar sticky-top navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="./pages/about_us.html">Sobre Nosotras</a>
+                            <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        </div>
+                    </div>
+                    <a class="nav-link" href="./index.html"><img src="../assets/imagenes/21.png" alt="" width="25%"
+                            height="25%"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="./pages/talles.html">Talles</a>
+                            <a class="nav-link" href="./pages/Contactanos.html">Contáctanos</a>
+                            <a class="carrito" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--
             <div class="menu">
                 <nav>
                     <ul>
@@ -41,10 +67,10 @@
                     </div>
                 </nav>
             </div>
+            -->
         </header>
         <main>
             <section class="principal">
-                <h1>NUEVA COLECCIÓN</h1>
                 <div class="nuevacoleccion">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                         <div class="carousel-indicators">
@@ -83,27 +109,36 @@
                 <h2>PROMOCIONES</h2>
                 <div class="promos">
                     <div class="card" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita4.png" class="card-img-top" alt="..."></a>
+                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita4.png"
+                                class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href=""><h5 class="card-title">Canillita TONGA</h5>
-                            <p class="card-text">$3500</p>
-                            Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="">
+                                <h5 class="card-title">Canillita TONGA</h5>
+                                <p class="card-text">$3500</p>
+                                Agregar al carrito<i class="fa-solid fa-cart-shopping"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="card" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/top5.png" class="card-img-top" alt="..."></a>
+                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/top5.png" class="card-img-top"
+                                alt="..."></a>
                         <div class="card-body">
-                            <a href=""><h5 class="card-title">Top AUSTRALIA</h5>
-                            <p class="card-text">$3500</p>
-                            Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="">
+                                <h5 class="card-title">Top AUSTRALIA</h5>
+                                <p class="card-text">$3500</p>
+                                Agregar al carrito<i class="fa-solid fa-cart-shopping"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="card" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita2.png.jpeg" class="card-img-top" alt="..."></a>
+                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita2.png.jpeg"
+                                class="card-img-top" alt="..."></a>
                         <div class="card-body">
-                            <a href=""><h5 class="card-title">Canillita ESPAÑA</h5>
-                            <p class="card-text">$3500</p>
-                            Agregar al carrito<i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="">
+                                <h5 class="card-title">Canillita ESPAÑA</h5>
+                                <p class="card-text">$3500</p>
+                                Agregar al carrito<i class="fa-solid fa-cart-shopping"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -111,7 +146,8 @@
         </main>
         <footer>
             <div class="contacto">
-                <ul><h6>Contacto</h6>
+                <ul>
+                    <h6>Contacto</h6>
                     <li>contacto@floryflor.com</li>
                     <li>0800-444-FLOR</li>
                     <li>Av. Juan B. Justo 345, CABA</li>

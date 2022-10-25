@@ -19,6 +19,29 @@ body{
     grid-row-gap: 1%;
 
 }
+.navbar-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: sticky;
+}
+.navbar .nav-link{
+    color: #FF0060;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+}
+.carrito{
+    position: absolute;
+    font-size: 1.3rem;
+    margin-left: 50%;
+    margin-bottom: 20%;
+    color: gray;
+}
 header{
     grid-area: menu;
     width: 100%;
@@ -29,6 +52,7 @@ header{
 }
 header nav{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -54,11 +78,7 @@ header nav ul li a{
 header nav ul li .submenu{
     position: absolute;
     display: none;
-    border-radius: 5%;
-    background-color: rgba(128, 128, 128, 0.605);
-    width: 8%;
-    height: 60%;
-    color: white;
+    color: gray;
     list-style-type: none;
     text-align: left;
 }
@@ -118,6 +138,7 @@ h2{
 }
 .promos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
 }
@@ -127,7 +148,7 @@ h2{
     text-align: center;
 }
 footer{
-    background-color: #FF0060; 
+    background-color: grey; 
     grid-area: final;
     padding: 1%;
     height: 80%;
@@ -136,6 +157,7 @@ footer{
     font-style: bold;
     font-family: Josefin Sans;
     font-size: 0.8rem;
+    margin-top: 1%;
 }
 .contacto{
     width: 40%;
@@ -165,12 +187,15 @@ footer{
     justify-content: space-evenly;
     text-align: center;
     gap: 1rem;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .card{
     border-color: #FF0060;
     border-style: double;
     background-color: white;
+
 }
 .fotoprod:hover .card-img-top{
     transform: scale(1.2,1.2);
@@ -212,11 +237,11 @@ form textarea{
 }
 .como_medir{
     color:#FF0060;
-    margin: 3%;
     text-align: center;
-    font-size: 1.3rem;
-    width: 70%;
-    margin-left: 15%;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 10%;
+
 }
 .como_medir h2{
     padding-top: 3%;
@@ -231,8 +256,7 @@ form textarea{
     font-family: Josefin Sans;
     font-size: 1rem;
     padding-top: 1%;
-    gap: 1%;
-    margin-left: 2%;
+    gap: 0.5%;
     margin-bottom: 2%;
 }
 
@@ -252,4 +276,99 @@ form textarea{
     width: 100%;
     margin-left: 3%;
     color: gray;
+}
+
+@media screen and (max-width: 720px) {
+    footer{
+        background-color: grey; 
+        grid-area: final;
+        padding: 1%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-style: bold;
+        font-family: Josefin Sans;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .contacto{
+        width: 100%;
+        justify-content: center;
+    }
+    .contacto ul{
+        list-style-type: none;
+    }
+    .pagos{
+        width: 100%;
+        text-align: center;
+    }
+    .pagos i{
+        font-size: 1.5rem;
+    }
+    .social{
+        width: 100%;
+        text-align: center;
+    }
+    .social a i{
+        color: white;
+        font-size: 1.5rem;
+    }
+    .talles{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: grey;
+        font-family: Josefin Sans;
+        font-size: 1rem;
+        width: 90%;
+        padding-top: 1%;
+        gap: 1%;
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+    .como_medir{
+        color:#FF0060;
+        text-align: center;
+        font-size: 1.3rem;
+        width: 100%;
+        margin: 0%;
+    }
+    .como_medir h2{
+        color: grey;
+        text-align: center;
+        font-style: bold;
+        margin: 0%;
+    }
+    .contactanos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        font-style: bold;
+        color: gray;
+    }
+    form input{
+        border-color: #FF0060;
+        border-style: double;
+        width: 50%;
+    }
+    .navbar-nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .navbar .nav-link{
+        color: #FF0060;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        font-size: 1.5rem;
+    }
+    .carrito{
+        display: none;
+    }
 }
