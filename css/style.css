@@ -143,6 +143,7 @@ h2{
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
+    gap: 10;
 }
 .promos a{
     text-decoration: none;
@@ -153,13 +154,13 @@ footer{
     background-color: grey; 
     grid-area: final;
     padding: 1%;
-    height: 80%;
+    height: 100%;
     display: flex;
     color: white;
     font-style: bold;
     font-family: Josefin Sans;
     font-size: 0.8rem;
-    margin-top: 1%;
+
 }
 .contacto{
     width: 40%;
@@ -243,7 +244,6 @@ form textarea{
     font-size: 1.2rem;
     width: 100%;
     height: 10%;
-
 }
 .como_medir h2{
     padding-top: 3%;
@@ -271,6 +271,10 @@ form textarea{
     align-items: center;
     margin: 3%;
 }
+.nosotras div{
+    width: 100%;
+
+}
 .nosotras img{
     border-radius: 5%;
 }
@@ -282,95 +286,59 @@ form textarea{
 
 @media screen and (max-width: 720px) {
     footer{
-        background-color: grey; 
-        grid-area: final;
-        padding: 1%;
-        height: 80%;
         display: flex;
         flex-direction: column;
-        color: white;
-        font-style: bold;
-        font-family: Josefin Sans;
-        font-size: 0.8rem;
         text-align: center;
     }
     .contacto{
         width: 100%;
-        justify-content: center;
     }
     .contacto ul{
-        list-style-type: none;
+        margin: 0%;
     }
     .pagos{
         width: 100%;
-        text-align: center;
-    }
-    .pagos i{
-        font-size: 1.5rem;
     }
     .social{
         width: 100%;
         text-align: center;
     }
-    .social a i{
-        color: white;
-        font-size: 1.5rem;
-    }
     .talles{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        color: grey;
-        font-family: Josefin Sans;
-        font-size: 1rem;
         width: 90%;
         padding-top: 1%;
         gap: 1%;
-        margin-left: 2%;
+        margin-left: 5%;
         margin-bottom: 2%;
-    }
-    .como_medir{
-        color:#FF0060;
-        text-align: center;
-        font-size: 1.3rem;
-        width: 100%;
-        margin: 0%;
-    }
-    .como_medir h2{
-        color: grey;
-        text-align: center;
-        font-style: bold;
-        margin: 0%;
     }
     .contactanos{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        text-align: center;
-        font-style: bold;
-        color: gray;
     }
     form input{
-        border-color: #FF0060;
-        border-style: double;
         width: 50%;
-    }
-    .navbar-nav{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-    .navbar .nav-link{
-        color: #FF0060;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 100%;
-        font-size: 1.5rem;
     }
     .carrito{
         display: none;
+    }
+    .nosotras{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 3%;
+    }
+    .promos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .promos .card{
+        margin-top: 3%;
+    }
+    .navbar .nav-link{
+        justify-content: start;
     }
 }
