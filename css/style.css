@@ -25,7 +25,8 @@ header{
     height: 100%;
     background-color: rgb(255, 255, 255);
     color: #FF0060;
-    margin-top: 1%;
+    position: sticky;
+    top: 0%;
 }
 .navbar-nav{
     display: flex;
@@ -33,7 +34,6 @@ header{
     align-items: center;
     width: 100%;
     height: 100%;
-    position: sticky;
 }
 .navbar .nav-link{
     color: #FF0060;
@@ -46,72 +46,10 @@ header{
 .carrito{
     position: absolute;
     font-size: 1.3rem;
-    margin-left: 50%;
-    margin-bottom: 20%;
+    margin-left: 10%;
+    margin-bottom: 8%;
     color: gray;
 }
-/*
-header nav{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    position: sticky;
-}
-header nav ul{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style-type: none;
-    background-color: white;
-    gap: 8%;
-    margin-right: 5%;
-}
-header nav ul li{
-    width: 100%;
-    font-size: 1.3rem;
-    position: relative;
-    color: #FF0060;
-}
-header nav ul li a{
-    text-decoration: none;
-    color: #FF0060;
-}
-header nav ul li .submenu{
-    position: absolute;
-    display: none;
-    border-radius: 5%;
-    background-color: rgba(128, 128, 128, 0.605);
-    width: 8%;
-    height: 60%;
-    color: white;
-    list-style-type: none;
-    text-align: left;
-}
-header nav ul li .submenu li{
-    display: block;
-    font-size: medium;
-    text-align: left;
-}
-header nav ul li:hover .submenu{
-    display: block;
-}
-header nav ul li a .logo{
-    width: 8rem;
-}
-header nav .iconos{
-    position: absolute;
-    margin-left: 95%;
-}
-.iconos a{
-    font-size: x-large;
-    color: gray;
-    text-decoration: none;
-}
-*/
 h1{
     color: #FF0060;
     font-family: Josefin sans, sans-serif;
@@ -135,6 +73,7 @@ h2{
     text-align: center;
     font-style: bold;
     padding: 2%;
+    margin-top: 2%;
 }
 .promos{
     display: flex;
@@ -285,6 +224,9 @@ form textarea{
         flex-direction: column;
         text-align: center;
     }
+    footer h6{
+        color: #FF0060;
+    }
     .contacto{
         width: 100%;
     }
@@ -316,6 +258,9 @@ form textarea{
     form input{
         width: 50%;
     }
+    .enviar{
+        width: 40%;
+    }
     .carrito{
         display: none;
     }
@@ -324,6 +269,11 @@ form textarea{
         flex-direction: column;
         align-items: center;
         margin: 3%;
+    }
+    .nosotras img{
+        width: 100%;
+        height: 50%;
+        margin-bottom: 1%;
     }
     .promos{
         display: flex;
