@@ -1,0 +1,17 @@
+.card{
+    border-color: $principal;
+    border-style: double;
+    background-color: $fondo;
+        a{
+            text-decoration: none;
+            color: $secundario;
+            font-size: large;
+        }
+            i{
+                color: $principal
+            }
+}
+.fotoprod:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 1s;
+}

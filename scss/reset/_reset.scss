@@ -1,0 +1,22 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $fondo;
+    font-family: $letra, sans-serif;
+}
+.padre{
+    display: grid;
+    grid-template-areas:
+        "menu"
+        "coleccion"
+        "promociones"
+        "final";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 4fr 1r;
+    grid-row-gap: 1%;
+}

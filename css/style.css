@@ -17,7 +17,6 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr 4fr 1r;
     grid-row-gap: 1%;
-
 }
 header{
     grid-area: menu;
@@ -139,12 +138,12 @@ footer{
     transform: scale(1.2,1.2);
     transition-duration: 1s;
 }
-.galeria_productos a{
+.card a{
     text-decoration: none;
     color: gray;
     font-size: large;
 }
-.galeria_productos .card a i{
+.card a i{
     color: #FF0060;
 }
 .carousel-item{

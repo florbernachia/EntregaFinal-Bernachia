@@ -1,0 +1,128 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: Josefin Sans, sans-serif;
+}
+
+.padre {
+  display: grid;
+  grid-template-areas: "menu" "coleccion" "promociones" "final";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr 4fr 1r;
+  grid-row-gap: 1%;
+}
+
+.card {
+  border-color: #FF0060;
+  border-style: double;
+  background-color: white;
+}
+.card a {
+  text-decoration: none;
+  color: gray;
+  font-size: large;
+}
+.card i {
+  color: #FF0060;
+}
+
+.fotoprod:hover {
+  transform: scale(1.2, 1.2);
+  transition-duration: 1s;
+}
+
+header {
+  grid-area: menu;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+  box-shadow: 1px 0px 5px #c4c2c2;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar .nav-link {
+  color: #FF0060;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  font-size: 1.5rem;
+}
+
+.carrito {
+  position: absolute;
+  font-size: 1.3rem;
+  margin-left: 10%;
+  margin-bottom: 7%;
+  color: gray;
+}
+
+h1 {
+  color: #FF0060;
+  font-family: Josefin Sans, sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  font-style: bold;
+  padding: 2%;
+  margin-bottom: 1%;
+}
+
+h2 {
+  color: #FF0060;
+  font-family: Josefin Sans;
+  font-size: xx-large;
+  text-align: center;
+  font-style: bold;
+  padding: 2%;
+  margin-top: 2%;
+}
+
+footer {
+  background-color: gray;
+  grid-area: final;
+  padding: 1%;
+  height: 100%;
+  display: flex;
+  color: white;
+  font-style: bold;
+  font-family: Josefin Sans;
+  font-size: 0.8rem;
+}
+
+.contacto {
+  width: 40%;
+  justify-content: right;
+}
+
+.pagos {
+  width: 30%;
+  text-align: center;
+}
+.pagos i {
+  font-size: 1.5rem;
+}
+
+.social {
+  width: 30%;
+  text-align: right;
+}
+.social a i {
+  color: white;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=main.css.map */
