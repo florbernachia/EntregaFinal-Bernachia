@@ -1,0 +1,16 @@
+.segundasection{
+    grid-area: promociones;
+}
+.promos{
+    grid-area: promociones;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    gap: 10;
+        a{
+            text-decoration: none;
+            color: $secundario;
+            text-align: center;
+        }
+}

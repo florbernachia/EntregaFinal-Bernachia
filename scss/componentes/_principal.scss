@@ -1,0 +1,93 @@
+.nuevacoleccion{
+    grid-area: coleccion;
+}
+.segundasection{
+    grid-area: promociones;
+}
+.carousel-item{
+    width: 100%;
+    height: 10%;
+}
+.galeria_productos{
+    grid-area: principal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 1rem;
+    margin: 1%;
+}
+.contactanos{
+    grid-area: principal;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-style: bold;
+    color: $secundario;
+    font-size: 1.3rem;
+        i{
+            color: $principal;
+        }
+}
+fieldset {
+    font-size: 1.3rem;
+    text-align: center;
+}
+form input{
+    border-color: $principal;
+    border-style: double;
+    width: 80%;
+    text-align: center;
+}
+textarea{
+    border-color: $principal;
+    border-style: double;
+
+}
+.enviar{
+    background-color: $fondo;
+    border-color: $principal;
+    border-style: double;
+    color: $secundario;
+    width: 60%;
+}
+.como_medir{
+    color: $secundario;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 100%;
+    height: 10%;
+}
+.talles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: $secundario;
+    font-family: Josefin Sans;
+    font-size: 1rem;
+    margin-bottom: 2%;
+    text-align: center;
+        img{
+            width: 80%;
+            height: 50%;
+        }
+}
+.nosotras{
+    grid-area: principal;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+        p{
+            width: 55%;
+            margin-left: 3%;
+            color: $secundario;
+            font-size: 1.3rem;
+        }
+            img{
+                width: 40%;
+                height: 70%;
+                border-radius: 5%;
+            }
+}

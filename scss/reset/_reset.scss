@@ -9,7 +9,7 @@ body{
     background-color: $fondo;
     font-family: $letra, sans-serif;
 }
-.padre{
+.grid_index{
     display: grid;
     grid-template-areas:
         "menu"
@@ -19,4 +19,17 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 5fr 4fr 1r;
     grid-row-gap: 1%;
+}
+.grid_paginas{
+    display: grid;
+    grid-template-areas: 
+        "menu"
+        "principal"
+        "final";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr 1r;
+        grid-row-gap: 1%;
+}
+html{
+    scroll-behavior:initial;
 }

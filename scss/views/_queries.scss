@@ -1,0 +1,74 @@
+@media screen and (max-width: 1024px){
+    .contactanos{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    form input{
+        width: 50%;
+    }
+    textarea{
+        width: 80%;
+    }
+    .enviar{
+        width: 40%;
+    }
+    .mapa{
+        width: 90%;
+    }
+    .nosotras{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 3%;
+            p{
+                width: 80%;
+                height: 100%;
+                border-top: 5%;
+            }
+                img{
+                    width: 80%;
+                    height: 60%;
+                }
+    }
+}
+@media screen and (max-width: 991px){
+    .carrito{
+        display: none;
+    }
+    .talles{
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1%;
+    }
+}
+@media screen and (max-width: 720px){
+    footer{
+        flex-direction: column;
+        text-align: center;
+            h6{
+                color: $principal;
+            }
+    }
+
+.contacto{
+    width: 100%;
+}
+.pagos{
+    width: 100%;
+}
+.social{
+    width: 100%;
+    text-align: center;
+}
+.nosotras{
+    flex-direction: column;
+    justify-content: center;
+}
+.promos{
+    flex-direction: column;
+    align-items: center;
+        .card{
+            margin-top: 3%;
+        }
+}
+}

@@ -63,10 +63,7 @@ h1{
 .principal{
     grid-area: coleccion;
 }
-.segundasection{
-    grid-area: promociones;
 
-}
 h2{
     color: #FF0060;
     font-family: Josefin Sans;
@@ -76,7 +73,8 @@ h2{
     padding: 2%;
     margin-top: 2%;
 }
-.promos{
+.segundasection{
+    grid-area: promociones;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

@@ -9,12 +9,24 @@ body {
   font-family: Josefin Sans, sans-serif;
 }
 
-.padre {
+.grid_index {
   display: grid;
   grid-template-areas: "menu" "coleccion" "promociones" "final";
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 5fr 4fr 1r;
   grid-row-gap: 1%;
+}
+
+.grid_paginas {
+  display: grid;
+  grid-template-areas: "menu" "principal" "final";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr 1r;
+  grid-row-gap: 1%;
+}
+
+html {
+  scroll-behavior: initial;
 }
 
 .card {
@@ -125,4 +137,200 @@ footer {
 .social a i {
   color: white;
   font-size: 1.5rem;
+}
+
+.segundasection {
+  grid-area: promociones;
+}
+
+.promos {
+  grid-area: promociones;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  gap: 10;
+}
+.promos a {
+  text-decoration: none;
+  color: gray;
+  text-align: center;
+}
+
+.nuevacoleccion {
+  grid-area: coleccion;
+}
+
+.segundasection {
+  grid-area: promociones;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 10%;
+}
+
+.galeria_productos {
+  grid-area: principal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 1rem;
+  margin: 1%;
+}
+
+.contactanos {
+  grid-area: principal;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  font-style: bold;
+  color: gray;
+  font-size: 1.3rem;
+}
+.contactanos i {
+  color: #FF0060;
+}
+
+fieldset {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+form input {
+  border-color: #FF0060;
+  border-style: double;
+  width: 80%;
+  text-align: center;
+}
+
+textarea {
+  border-color: #FF0060;
+  border-style: double;
+}
+
+.enviar {
+  background-color: white;
+  border-color: #FF0060;
+  border-style: double;
+  color: gray;
+  width: 60%;
+}
+
+.como_medir {
+  color: gray;
+  text-align: center;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 10%;
+}
+
+.talles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: gray;
+  font-family: Josefin Sans;
+  font-size: 1rem;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.talles img {
+  width: 80%;
+  height: 50%;
+}
+
+.nosotras {
+  grid-area: principal;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.nosotras p {
+  width: 55%;
+  margin-left: 3%;
+  color: gray;
+  font-size: 1.3rem;
+}
+.nosotras img {
+  width: 40%;
+  height: 70%;
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 1024px) {
+  .contactanos {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  form input {
+    width: 50%;
+  }
+  textarea {
+    width: 80%;
+  }
+  .enviar {
+    width: 40%;
+  }
+  .mapa {
+    width: 90%;
+  }
+  .nosotras {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 3%;
+  }
+  .nosotras p {
+    width: 80%;
+    height: 100%;
+    border-top: 5%;
+  }
+  .nosotras img {
+    width: 80%;
+    height: 60%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .carrito {
+    display: none;
+  }
+  .talles {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1%;
+  }
+}
+@media screen and (max-width: 720px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer h6 {
+    color: #FF0060;
+  }
+  .contacto {
+    width: 100%;
+  }
+  .pagos {
+    width: 100%;
+  }
+  .social {
+    width: 100%;
+    text-align: center;
+  }
+  .nosotras {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .promos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .promos .card {
+    margin-top: 3%;
+  }
 }/*# sourceMappingURL=main.css.map */
