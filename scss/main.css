@@ -256,8 +256,8 @@ textarea {
   text-align: center;
 }
 .talles img {
-  width: 80%;
-  height: 50%;
+  width: 75%;
+  height: 45%;
 }
 
 .nosotras {
@@ -317,11 +317,6 @@ textarea {
   .carrito {
     display: none;
   }
-  .talles {
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 1%;
-  }
 }
 @media screen and (max-width: 720px) {
   footer {
@@ -330,6 +325,10 @@ textarea {
   }
   footer h6 {
     color: #FF0060;
+  }
+  .talles {
+    flex-direction: column;
+    align-items: center;
   }
   .contacto {
     width: 100%;
