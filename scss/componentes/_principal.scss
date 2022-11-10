@@ -4,9 +4,18 @@
 .segundasection{
     grid-area: promociones;
 }
+.carousel-inner{
+    margin-top: -3%;
+}
 .carousel-item{
     width: 100%;
     height: 10%;
+}
+.carousel-caption {
+    top: 20px;
+    font-size: 5rem;
+    color: $fondo;
+    text-align: center;
 }
 .galeria_productos{
     grid-area: principal;
@@ -49,7 +58,7 @@ textarea{
     border-color: $principal;
     border-style: double;
     color: $secundario;
-    width: 60%;
+    width: 30%;
 }
 .como_medir{
     color: $secundario;
