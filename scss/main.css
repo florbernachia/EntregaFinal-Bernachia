@@ -119,32 +119,35 @@ footer {
   padding: 1%;
   height: 100%;
   display: flex;
+  justify-content: space-between;
   color: white;
   font-style: bold;
   font-family: Josefin Sans;
-  font-size: 0.8rem;
+}
+footer h5 {
+  color: rgb(44, 44, 44);
 }
 
 .contacto {
-  width: 40%;
-  justify-content: right;
+  font-size: 1.2rem;
+  margin-left: 2%;
+  text-align: center;
 }
 
 .pagos {
-  width: 30%;
   text-align: center;
 }
 .pagos i {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .social {
-  width: 30%;
-  text-align: right;
+  text-align: center;
+  margin-right: 2%;
 }
 .social a i {
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .segundasection {
@@ -331,7 +334,7 @@ textarea {
     flex-direction: column;
     text-align: center;
   }
-  footer h6 {
+  footer h5 {
     color: rgb(44, 44, 44);
   }
   .talles {
