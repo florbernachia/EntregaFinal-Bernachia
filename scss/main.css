@@ -330,11 +330,8 @@ fieldset {
     flex-direction: column;
     justify-content: space-evenly;
   }
-  form input {
+  .text {
     width: 50%;
-  }
-  textarea {
-    width: 80%;
   }
   .enviar {
     width: 40%;
@@ -374,12 +371,9 @@ fieldset {
   footer h5 {
     color: rgb(44, 44, 44);
   }
-  .talles {
-    flex-direction: column;
-    align-items: center;
-  }
   .contacto {
     width: 100%;
+    text-align: center;
   }
   .pagos {
     width: 100%;
@@ -397,5 +391,9 @@ fieldset {
   }
   .carousel-caption {
     top: 2%;
+  }
+  .talles {
+    flex-direction: column;
+    align-items: center;
   }
 }/*# sourceMappingURL=main.css.map */
