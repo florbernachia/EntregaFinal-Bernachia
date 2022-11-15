@@ -13,9 +13,11 @@
 }
 .carousel-caption {
     top: 2%;
-    font-size: 5rem;
     color: $fondo;
     text-align: center;
+        h1{
+            padding-top: 1%;
+        }
 }
 .galeria_productos{
     grid-area: principal;
@@ -49,6 +51,11 @@ fieldset {
     width: 80%;
     text-align: center;
     border-radius: 10px 10px 10px 10px;
+}
+.text:focus, .text_area:focus{
+    border-color: $secundario;
+    box-shadow: 1px 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 2px rgba(44,44,44);
+    outline: 0 none;
 }
 .text_area{
     border-color: $principal;
