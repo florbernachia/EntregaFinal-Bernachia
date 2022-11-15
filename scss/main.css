@@ -48,6 +48,10 @@ html {
   transition-duration: 1s;
 }
 
+.galeria {
+  margin-bottom: 3%;
+}
+
 header {
   grid-area: menu;
   width: 100%;
@@ -160,12 +164,6 @@ footer h5 {
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
-  gap: 10;
-}
-.promos a {
-  text-decoration: none;
-  color: gray;
-  text-align: center;
 }
 
 .nuevacoleccion {
@@ -196,10 +194,9 @@ footer h5 {
   grid-area: principal;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
-  gap: 1rem;
-  margin: 1%;
+  gap: 5%;
 }
 
 .contactanos {

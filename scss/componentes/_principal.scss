@@ -21,10 +21,9 @@
     grid-area: principal;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
-    gap: 1rem;
-    margin: 1%;
+    gap: 5%;
 }
 .contactanos{
     grid-area: principal;
