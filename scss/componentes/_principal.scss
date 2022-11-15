@@ -12,7 +12,7 @@
     height: 10%;
 }
 .carousel-caption {
-    top: 20px;
+    top: 2%;
     font-size: 5rem;
     color: $fondo;
     text-align: center;
@@ -85,18 +85,21 @@ textarea{
     grid-area: principal;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 3%;
+}
+.img_nosotras{
+    width: 40%;
     height: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
-        p{
-            width: 55%;
-            margin-left: 3%;
-            color: $secundario;
-            font-size: 1.3rem;
+        img{
+            width: 80%;
+            border-radius: 5%;
         }
-            img{
-                width: 40%;
-                height: 70%;
-                border-radius: 5%;
-            }
+}
+.parrafo_nosotras{
+    width: 60%;
+    height: 100%;
+    color: $secundario;
+    font-size: 1.3rem;
+    line-height: 105%;
 }

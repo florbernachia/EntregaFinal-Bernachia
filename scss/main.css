@@ -183,7 +183,7 @@ footer {
 }
 
 .carousel-caption {
-  top: 20px;
+  top: 2%;
   font-size: 5rem;
   color: white;
   text-align: center;
@@ -264,20 +264,25 @@ textarea {
   grid-area: principal;
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
+  justify-content: space-evenly;
+  margin: 3%;
 }
-.nosotras p {
-  width: 55%;
-  margin-left: 3%;
+
+.img_nosotras {
+  width: 40%;
+  height: 100%;
+}
+.img_nosotras img {
+  width: 80%;
+  border-radius: 5%;
+}
+
+.parrafo_nosotras {
+  width: 60%;
+  height: 100%;
   color: gray;
   font-size: 1.3rem;
-}
-.nosotras img {
-  width: 40%;
-  height: 70%;
-  border-radius: 5%;
+  line-height: 105%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -297,25 +302,28 @@ textarea {
   .mapa {
     width: 90%;
   }
-  .nosotras {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 3%;
-  }
-  .nosotras p {
-    width: 80%;
-    height: 100%;
-    border-top: 5%;
-  }
-  .nosotras img {
-    width: 80%;
-    height: 60%;
-  }
 }
 @media screen and (max-width: 991px) {
   .carrito {
     display: none;
+  }
+  .nosotras {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+  }
+  .img_nosotras {
+    width: 90%;
+  }
+  .img_nosotras img {
+    width: 100%;
+  }
+  .parrafo_nosotras {
+    width: 90%;
+    margin-top: 3%;
+    text-align: center;
   }
 }
 @media screen and (max-width: 720px) {
@@ -324,7 +332,7 @@ textarea {
     text-align: center;
   }
   footer h6 {
-    color: #FF0060;
+    color: rgb(44, 44, 44);
   }
   .talles {
     flex-direction: column;
@@ -340,15 +348,14 @@ textarea {
     width: 100%;
     text-align: center;
   }
-  .nosotras {
-    flex-direction: column;
-    justify-content: center;
-  }
   .promos {
     flex-direction: column;
     align-items: center;
   }
   .promos .card {
     margin-top: 3%;
+  }
+  .carousel-caption {
+    top: 2%;
   }
 }/*# sourceMappingURL=main.css.map */

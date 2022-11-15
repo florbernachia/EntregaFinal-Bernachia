@@ -15,60 +15,60 @@
     .mapa{
         width: 90%;
     }
-    .nosotras{
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-        gap: 3%;
-            p{
-                width: 80%;
-                height: 100%;
-                border-top: 5%;
-            }
-                img{
-                    width: 80%;
-                    height: 60%;
-                }
-    }
 }
 @media screen and (max-width: 991px){
     .carrito{
         display: none;
     }
-
+    .nosotras{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 3%;
+    }
+    .img_nosotras{
+        width: 90%;
+            img{
+                width: 100%;
+            }
+    }
+    .parrafo_nosotras{
+        width: 90%;
+        margin-top: 3%;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 720px){
     footer{
         flex-direction: column;
         text-align: center;
             h6{
-                color: $principal;
+                color: rgb(44, 44, 44);
             }
     }
     .talles{
         flex-direction: column;
         align-items: center;
     }
-
-.contacto{
-    width: 100%;
-}
-.pagos{
-    width: 100%;
-}
-.social{
-    width: 100%;
-    text-align: center;
-}
-.nosotras{
-    flex-direction: column;
-    justify-content: center;
-}
-.promos{
-    flex-direction: column;
-    align-items: center;
-        .card{
-            margin-top: 3%;
-        }
-}
+    .contacto{
+        width: 100%;
+    }
+    .pagos{
+        width: 100%;
+    }
+    .social{
+        width: 100%;
+        text-align: center;
+    }
+    .promos{
+        flex-direction: column;
+        align-items: center;
+            .card{
+                margin-top: 3%;
+            }
+    }
+    .carousel-caption {
+        top: 2%;
+    }
 }
