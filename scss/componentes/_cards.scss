@@ -7,9 +7,18 @@
             color: $secundario;
             font-size: large;
         }
-            i{
-                color: $principal
-            }
+}
+.btn{
+    background-color: $principal;
+    border-color: $fondo;
+    color: $fondo;
+        i{
+            color: $fondo
+            text-shadow 1px 1px 1px $secundario;
+        }
+}
+.card-title:hover{
+    color: $principal;
 }
 .fotoprod:hover{
     transform: scale(1.2,1.2);

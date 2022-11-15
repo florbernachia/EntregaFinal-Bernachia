@@ -39,7 +39,17 @@ html {
   color: gray;
   font-size: large;
 }
-.card i {
+
+.btn {
+  background-color: #FF0060;
+  border-color: white;
+  color: white;
+}
+.btn i {
+  color: white text-shadow 1px 1px 1px gray;
+}
+
+.card-title:hover {
   color: #FF0060;
 }
 
@@ -72,6 +82,11 @@ header {
   height: 100%;
 }
 
+.nav-link a {
+  width: 50%;
+  height: 50%;
+}
+
 .navbar .nav-link {
   color: #FF0060;
   display: flex;
@@ -81,22 +96,30 @@ header {
   font-size: 1.5rem;
 }
 
+.navbar .nav-link:hover {
+  color: gray;
+  transform: scale(1.1, 1.1);
+}
+
 .carrito {
   position: absolute;
   font-size: 1.3rem;
-  margin-left: 10%;
-  margin-bottom: 7%;
+  margin-left: 25%;
+  margin-bottom: 5%;
   color: gray;
+}
+
+.carrito:hover {
+  color: #FF0060;
 }
 
 h1 {
   color: #FF0060;
   font-family: Josefin Sans, sans-serif;
-  font-size: xx-large;
   text-align: center;
   font-style: bold;
-  padding: 2%;
   margin-bottom: 1%;
+  margin-top: 1%;
 }
 
 h2 {
@@ -122,6 +145,7 @@ footer {
   grid-area: final;
   padding: 1%;
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -134,11 +158,13 @@ footer h5 {
 
 .contacto {
   font-size: 1.2rem;
-  margin-left: 2%;
-  text-align: center;
+  text-align: left;
+  width: 33%;
+  margin-left: 3%;
 }
 
 .pagos {
+  width: 33%;
   text-align: center;
 }
 .pagos i {
@@ -146,8 +172,9 @@ footer h5 {
 }
 
 .social {
-  text-align: center;
-  margin-right: 2%;
+  width: 33%;
+  margin-right: 3%;
+  text-align: right;
 }
 .social a i {
   color: white;
@@ -197,6 +224,7 @@ footer h5 {
   justify-content: center;
   text-align: center;
   gap: 5%;
+  line-height: 50%;
 }
 
 .contactanos {
@@ -217,24 +245,35 @@ fieldset {
   text-align: center;
 }
 
-form input {
+.text {
   border-color: #FF0060;
-  border-style: double;
+  border-style: solid;
+  border-width: thin;
   width: 80%;
   text-align: center;
+  border-radius: 10px 10px 10px 10px;
 }
 
-textarea {
+.text_area {
   border-color: #FF0060;
-  border-style: double;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .enviar {
-  background-color: white;
   border-color: #FF0060;
-  border-style: double;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+  border-radius: 10px 10px 10px 10px;
+  background-color: white;
   color: gray;
   width: 30%;
+  padding-top: 1%;
+}
+
+.enviar:hover {
+  background-color: #FF0060;
+  color: white;
 }
 
 .como_medir {
@@ -253,6 +292,7 @@ textarea {
   font-family: Josefin Sans;
   font-size: 1rem;
   margin-bottom: 2%;
+  margin-top: 2%;
   text-align: center;
 }
 .talles img {

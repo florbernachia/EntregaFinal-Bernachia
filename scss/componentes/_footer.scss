@@ -3,6 +3,7 @@ footer{
     grid-area: final;
     padding: 1%;
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     color: $fondo;
@@ -14,18 +15,21 @@ footer{
 }
 .contacto{
     font-size: 1.2rem;
-    margin-left: 2%;
-    text-align: center;
+    text-align: left;
+    width: 33%;
+    margin-left: 3%;
 }
 .pagos{
+    width: 33%;
     text-align: center;
         i{
             font-size: 2rem;
         }
 }
 .social{
-    text-align: center;
-    margin-right: 2%;
+    width: 33%;
+    margin-right: 3%;
+    text-align: right;
         a i{
             color: $fondo;
             font-size: 2rem;

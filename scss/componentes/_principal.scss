@@ -24,6 +24,7 @@
     justify-content: center;
     text-align: center;
     gap: 5%;
+    line-height: 50%;
 }
 .contactanos{
     grid-area: principal;
@@ -41,23 +42,32 @@ fieldset {
     font-size: 1.3rem;
     text-align: center;
 }
-form input{
+.text{
     border-color: $principal;
-    border-style: double;
+    border-style: solid;
+    border-width: thin;
     width: 80%;
     text-align: center;
+    border-radius: 10px 10px 10px 10px;
 }
-textarea{
+.text_area{
     border-color: $principal;
-    border-style: double;
-
+    border-radius: 10px 10px 10px 10px;
 }
 .enviar{
-    background-color: $fondo;
     border-color: $principal;
-    border-style: double;
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    background-color: $fondo;
     color: $secundario;
     width: 30%;
+    padding-top: 1%;
+}
+.enviar:hover{
+    background-color: $principal;
+    color: $fondo;
 }
 .como_medir{
     color: $secundario;
@@ -74,6 +84,7 @@ textarea{
     font-family: Josefin Sans;
     font-size: 1rem;
     margin-bottom: 2%;
+    margin-top: 2%;
     text-align: center;
         img{
             width: 75%;
