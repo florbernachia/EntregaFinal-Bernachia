@@ -40,16 +40,14 @@
     }
 }
 @media screen and (max-width: 720px){
-    footer{
+    .flex_footer{
         flex-direction: column;
-        text-align: center;
-            h5{
-                color: rgb(44, 44, 44);
-            }
+        justify-content: center;
     }
     .contacto{
         width: 100%;
         text-align: center;
+        margin: 0;
     }
     .pagos{
         width: 100%;

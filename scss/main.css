@@ -143,17 +143,21 @@ h2 {
 footer {
   background-color: gray;
   grid-area: final;
-  padding: 1%;
+  padding-top: 1%;
   height: 100%;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   color: white;
-  font-style: bold;
   font-family: Josefin Sans;
+  text-align: center;
 }
 footer h5 {
   color: rgb(44, 44, 44);
+}
+
+.flex_footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
 }
 
 .contacto {
@@ -179,6 +183,9 @@ footer h5 {
 .social a i {
   color: white;
   font-size: 2rem;
+}
+.social .derechos {
+  width: 100%;
 }
 
 .segundasection {
@@ -375,16 +382,14 @@ fieldset {
   }
 }
 @media screen and (max-width: 720px) {
-  footer {
+  .flex_footer {
     flex-direction: column;
-    text-align: center;
-  }
-  footer h5 {
-    color: rgb(44, 44, 44);
+    justify-content: center;
   }
   .contacto {
     width: 100%;
     text-align: center;
+    margin: 0;
   }
   .pagos {
     width: 100%;
