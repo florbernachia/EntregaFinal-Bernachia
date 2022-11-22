@@ -59,6 +59,8 @@ fieldset {
 }
 .text_area{
     border-color: $principal;
+    border-style: solid;
+    border-width: thin;
     border-radius: 10px 10px 10px 10px;
 }
 .enviar{
