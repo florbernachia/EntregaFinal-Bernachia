@@ -133,7 +133,7 @@ h2 {
 }
 
 .titulo_carrusel {
-  background-image: url(../../assets/imagenes/banner.jpg);
+  background-image: url(../assets/imagenes/banner.jpg);
   width: 150%;
   margin-left: -25%;
   color: #FF0060;
