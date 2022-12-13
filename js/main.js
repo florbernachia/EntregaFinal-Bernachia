@@ -1,4 +1,4 @@
-let PIN = "1234";
+/* let PIN = "1234";
 let USUARIO = "JavaScript";
 //El usuario se registra 
 function login() {
@@ -74,4 +74,4 @@ while (opcion != "X" && opcion != "x") {
     opcion = prompt("COMPRAS MAYORISTAS \n¿Qué te gustaría comprar?: \n1- Tops. \n2 - Canillitas. \n3 - Calzas. \nPresioná X para finalizar.");
 } 
 } 
-    alert("Gracias por su compra!");
+    alert("Gracias por su compra!"); */
