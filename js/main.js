@@ -1,4 +1,4 @@
-let PIN = "1234";
+/* let PIN = "1234";
 let USUARIO = "JavaScript";
 //El usuario se registra 
 function login() {
@@ -36,7 +36,7 @@ while (opcion != "X" && opcion != "x") {
         case "1":
             let tops = prompt("Ingresá cuántos tops querés comprar");
 
-            if (tops <= stockTop && tops > 5) {
+            if (tops <= stockTop && tops >= 5) {
                 let pedidoTops = tops * precioUnidad;
                 alert("Tu pedido de " + tops + " tops hace un total de $" + pedidoTops);
             } else if (tops < 5){
@@ -75,3 +75,4 @@ while (opcion != "X" && opcion != "x") {
 } 
 } 
     alert("Gracias por su compra!"); 
+ */

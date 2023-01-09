@@ -33,7 +33,8 @@
                             <a class="nav-link" href="./productos.html">Productos</a>
                         </div>
                     </div>
-                    <a class="nav-link mx-auto" href="../index.html"><img src="../assets/imagenes/20.jpg" alt="Logo" width="25%" height="30%"></a>
+                    <a class="nav-link mx-auto" href="../index.html"><img src="../assets/imagenes/20.jpg" alt="Logo"
+                            width="25%" height="30%"></a>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="navbar-nav">
                             <a class="nav-link" href="./talles.html">Tabla de Talles</a>
@@ -52,7 +53,27 @@
         <main>
             <h1>Productos</h1>
             <section>
-                <div class="galeria_productos">
+                <div id="filtroProductos">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="tops">
+                        <label class="form-check-label" for="inlineCheckbox1">Tops</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="canillitas">
+                        <label class="form-check-label" for="inlineCheckbox2">Canillitas</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="calzas">
+                        <label class="form-check-label" for="inlineCheckbox3">Calzas</label>
+                    </div>
+                    <div>
+                        <button  id="btnfiltrar">Buscar</button>
+                        <input type="text" placeholder="Filtro" id="search">
+                    </div>
+                    <div class="galeria_productos" id="productos">
+                </div>
+                <!--Contenido dinámico-->
+                    <!--
                     <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
                         <a href="" hover class="fotoprod"><img src="../assets/imagenes/top1.png" class="card-img-top"
                                 alt="Top rosa con flores"></a>
@@ -229,6 +250,7 @@
                         </div>
                     </div>
                 </div>
+                -->
             </section>
         </main>
         <footer>
@@ -257,8 +279,9 @@
                     <a href=""><i class="fa-brands fa-facebook"></i></a>
                 </div>
             </div>
-                <p>@F&F Todos los derechos reservados. 2022</p>
+            <p>@F&F Todos los derechos reservados. 2022</p>
         </footer>
+        <script src="../js/productos.js"></script>
         <script src="../js/wow.min.js"></script>
         <script>new WOW().init();</script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
