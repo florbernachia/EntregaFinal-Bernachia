@@ -62,6 +62,48 @@ html {
   margin-bottom: 3%;
 }
 
+.contenedor-carrito {
+  display: grid;
+  grid-template-areas: "productos comprar";
+  grid-template-columns: 6fr 1fr;
+  grid-column-gap: 50%;
+}
+
+.carrito-vacio {
+  color: gray;
+  display: none;
+}
+
+.carrito-productos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 70%;
+  margin-left: 1%;
+}
+
+.carrito-producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-color: #FF0060;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  padding: 1rem;
+  line-height: -50%;
+}
+
+.carrito-imagen-producto {
+  width: 10rem;
+}
+
+.carrito-acciones {
+  width: 20%;
+}
+
 header {
   grid-area: menu;
   width: 100%;
