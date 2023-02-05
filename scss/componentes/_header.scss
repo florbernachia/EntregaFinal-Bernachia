@@ -31,13 +31,34 @@ header{
     color: $secundario;
     transform: scale(1.1,1.1);
 }
-.carrito{
+.carrito-numero{
+    text-decoration: none;
+    position: absolute;
+    font-size: 1rem;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    background-color: $fondo;
+    color: $secundario;
+    border-color: $principal;
+    border-style: solid;
+    border-width: thin;
+    border-radius: 0.5rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+
+.carrito-icono{
     position: absolute;
     font-size: 1.3rem;
     margin-left: 25%;
     margin-bottom: 5%;
     color: $secundario;
-}
-.carrito:hover{
+    border: 0;
+    background-color: $fondo;
+    border-radius: 0.5rem;
+    padding: .25rem;
     color: $principal;
+}
+.carrito-icono:hover{
+    color: $secundario;
 }

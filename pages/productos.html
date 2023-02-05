@@ -39,7 +39,7 @@
                         <div class="navbar-nav">
                             <a class="nav-link" href="./talles.html">Tabla de Talles</a>
                             <a class="nav-link" href="./contáctanos.html">Contacto</a>
-                            <a class="carrito" href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                            <p class="carrito-numero">2</p><a class="carrito-icono" hover href="../pages/carrito.html"><i class="fa-solid fa-bag-shopping carrito"></i></a>
                         </div>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,204 +53,23 @@
         <main>
             <h1>Productos</h1>
             <section>
-                <div id="filtroProductos">
+                <div class="filtroProductos">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="tops">
-                        <label class="form-check-label" for="inlineCheckbox1">Tops</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="canillitas">
-                        <label class="form-check-label" for="inlineCheckbox2">Canillitas</label>
+                        <button class="form-check-label"hover id="todo" for="inlineCheckbox1">Todo</button>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="calzas">
-                        <label class="form-check-label" for="inlineCheckbox3">Calzas</label>
+                        <button class="form-check-label"hover id="top" for="inlineCheckbox1">Tops</button>
                     </div>
-                    <div>
-                        <button  id="btnfiltrar">Buscar</button>
-                        <input type="text" placeholder="Filtro" id="search">
+                    <div class="form-check form-check-inline">
+                        <button class="form-check-label"hover id="canillita">Canillitas</button>
                     </div>
-                    <div class="galeria_productos" id="productos">
+                    <div class="form-check form-check-inline">
+                        <button class="form-check-label" hover id="calza" for="inlineCheckbox3">Calzas</button>
+                    </div>
                 </div>
+                <div class="galeria_productos" id="productos">
                 <!--Contenido dinámico-->
-                    <!--
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/top1.png" class="card-img-top"
-                                alt="Top rosa con flores"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Top MEXICO</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/top2.png" class="card-img-top"
-                                alt="Top verde con flores"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Top FRANCIA</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/top3.png" class="card-img-top"
-                                alt="Top cruzado rosa"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Top JAPON</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/top4.png" class="card-img-top"
-                                alt="Top cruzado negro"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Top CONGO</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/top5.png" class="card-img-top"
-                                alt="Top clasico rosa y fucsia"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Top AUSTRALIA</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/top6.png" class="card-img-top"
-                                alt="Top clasico negro y gris"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Top PERU</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita1.png.jpeg"
-                                class="card-img-top" alt="Canillita batik colores"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Canillita CANADA</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita2.png.jpeg"
-                                class="card-img-top" alt="Canillita manchas colores"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Canillita ESPAÑA</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita3.png.png"
-                                class="card-img-top" alt="Canillita puntos rosas"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Canillita FILIPINAS</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita4.png"
-                                class="card-img-top" alt="Canillita flores"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Canillita TONGA</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita5.png"
-                                class="card-img-top" alt="Canillita jaspeado rosa"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Canillita NIGERIA</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/canillita6.png.jpeg"
-                                class="card-img-top" alt="Canillita cubitos de hielo"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Canillita BRASIL</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/calza1.png" class="card-img-top"
-                                alt="Calza abecedario"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Calza GUATEMALA</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/calza2.png" class="card-img-top"
-                                alt="Calza animal print negro"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Calza ITALIA</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/calza3.png" class="card-img-top"
-                                alt="Calza naturaleza rosa"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Calza CHINA</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card galeria wow animate__animated animate__fadeInUp" style="width: 15rem; height: 23rem;">
-                        <a href="" hover class="fotoprod"><img src="../assets/imagenes/calza4.png" class="card-img-top"
-                                alt="Calza flores grandes"></a>
-                        <div class="card-body">
-                            <a href="">
-                                <h5 class="card-title">Calza ARGENTINA</h5>
-                                <p class="card-text">$3500</p>
-                                <p class="btn">Comprar <i class="fa-solid fa-bag-shopping"></i></p>
-                            </a>
-                        </div>
-                    </div>
                 </div>
-                -->
             </section>
         </main>
         <footer>
