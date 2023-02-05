@@ -35,7 +35,7 @@ html {
   border-style: double;
   background-color: white;
   text-decoration: none;
-  color: gray;
+  color: #808080;
   font-size: large;
 }
 
@@ -45,7 +45,7 @@ html {
   color: white;
 }
 .btn i {
-  color: white text-shadow 1px 1px 1px gray;
+  color: white text-shadow 1px 1px 1px #808080;
 }
 
 .card-title:hover {
@@ -67,11 +67,11 @@ html {
   grid-template-columns: 6fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-column-gap: 1rem;
-  color: gray;
+  color: #808080;
 }
 
 .carrito-vacio {
-  color: gray;
+  color: #808080;
 }
 
 .carrito-productos {
@@ -127,7 +127,7 @@ html {
 }
 .carrito-acciones button:hover {
   background-color: white;
-  color: gray;
+  color: #808080;
   border-color: #FF0060;
   border-style: solid;
   border-width: thin;
@@ -144,7 +144,7 @@ html {
 
 .boton-vaciar-carrito, .form-check-label {
   background-color: white;
-  color: gray;
+  color: #808080;
   border-color: #FF0060;
   border-style: solid;
   border-width: thin;
@@ -205,7 +205,7 @@ header {
 }
 
 .navbar .nav-link:hover {
-  color: gray;
+  color: #808080;
   transform: scale(1.1, 1.1);
 }
 
@@ -216,7 +216,7 @@ header {
   margin-left: 20%;
   margin-bottom: 5%;
   background-color: white;
-  color: gray;
+  color: #808080;
   border-color: #FF0060;
   border-style: solid;
   border-width: thin;
@@ -229,7 +229,7 @@ header {
   font-size: 1.3rem;
   margin-left: 25%;
   margin-bottom: 5%;
-  color: gray;
+  color: #808080;
   border: 0;
   background-color: white;
   border-radius: 0.5rem;
@@ -238,7 +238,7 @@ header {
 }
 
 .carrito-icono:hover {
-  color: gray;
+  color: #808080;
 }
 
 h1 {
@@ -265,11 +265,11 @@ h2 {
   width: 150%;
   margin-left: -25%;
   color: #FF0060;
-  text-shadow: 2px 3px 2px gray;
+  text-shadow: 2px 3px 2px #808080;
 }
 
 footer {
-  background-color: gray;
+  background-color: #808080;
   grid-area: final;
   padding-top: 1%;
   height: 100%;
@@ -370,7 +370,7 @@ footer p {
   justify-content: space-evenly;
   text-align: center;
   font-style: bold;
-  color: gray;
+  color: #808080;
   font-size: 1.3rem;
 }
 .contactanos i {
@@ -392,7 +392,7 @@ fieldset {
 }
 
 .text:focus, .text_area:focus {
-  border-color: gray;
+  border-color: #808080;
   box-shadow: 1px 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 2px rgb(44, 44, 44);
   outline: 0 none;
 }
@@ -411,7 +411,7 @@ fieldset {
   text-align: center;
   border-radius: 10px 10px 10px 10px;
   background-color: white;
-  color: gray;
+  color: #808080;
   width: 30%;
   padding-top: 1%;
 }
@@ -422,7 +422,7 @@ fieldset {
 }
 
 .como_medir {
-  color: gray;
+  color: #808080;
   text-align: center;
   font-size: 1.2rem;
   width: 100%;
@@ -433,7 +433,7 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  color: gray;
+  color: #808080;
   font-family: Josefin Sans;
   font-size: 1rem;
   margin-bottom: 2%;
@@ -465,7 +465,7 @@ fieldset {
 .parrafo_nosotras {
   width: 60%;
   height: 100%;
-  color: gray;
+  color: #808080;
   font-size: 1.3rem;
   line-height: 105%;
 }

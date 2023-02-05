@@ -65,7 +65,27 @@ function actualizarBotones (){
     botonesAgregar = document.querySelectorAll (".btn");
 
     botonesAgregar.forEach(boton => {
-        boton.addEventListener("click", agregarAlCarrito)
+        boton.addEventListener("click", agregarAlCarrito),
+        boton.addEventListener ("click", () => {
+            Swal.fire({
+                title: 'Tu producto se ha agregado al carrito!',
+                titleColor: '#808080',
+                icon: 'success',
+                iconColor: '#FF0060',
+                showCancelButton: true,
+                confirmButtonText: 'Seguir comprando',
+                confirmButtonColor: '#FF0060',
+                cancelButtonText: 'Ir al carrito',
+                cancelButtonColor: '#808080',
+            }).then((result) => {
+        
+                if (result.isDismissed) {
+                    location.href = "carrito.html"
+                }
+            })
+        
+        
+        })
     })
 }
 
